@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Anicoin Trading - Demand Based</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Anicoin Stock Trading</h1>
+    <p>💰 Balance: <span id="balance">10000</span> ACN</p>
+
+    <div class="stock-info">
+      <h2>ANIC (Anicoin Corp.)</h2>
+      <p>📈 Price: <span id="price">100.00</span> ACN</p>
+      <canvas id="priceChart"></canvas>
+    </div>
+
+    <div class="controls">
+      <button onclick="buy()">Buy</button>
+      <button onclick="sell()">Sell</button>
+      <p>Last action: <span id="actionLog">None</span></p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
